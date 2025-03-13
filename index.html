@@ -45,7 +45,22 @@
 
     <section id="contact">
         <h2>Contact Me</h2>
-        <p>In the future, this will be a contact form. For now, just leave this as a placeholder.</p>
+        <p id="form-status">Thank you for visitng my portfolio! I'd love to keep in touch. Send me a message with any questions, tips, or if you want to learn more about me!</p>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <small class="error-message" id="name-error"></small>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <small class="error-message" id="email-error"></small>
+    
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+            <small class="error-message" id="message-error"></small>
+    
+            <button type="submit" class="btn">Send Message</button>
+        </form>
     </section>
 
     <footer>
