@@ -11,6 +11,9 @@ header, footer {
     color: rgb(155, 5, 255);
     text-align: center;
     padding: 20px;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 footer {
