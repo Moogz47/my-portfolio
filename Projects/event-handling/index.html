@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Various Event Types</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+    <header>
+        <h1>Event Types</h1>
+    </header>
+    
+    <section class="section" id="mouse-events">
+        <h2>Mouse Event</h2>
+        <p id="message">Hover over the button to see a message change!</p>
+        <button id="event-button">Hover over me!</button>
+    </section>
+
+    <section class="section" id="keyboard-events">
+        <h2>Keyboard Event</h2>
+        <p>Press any key in the input field to see the latest key pressed!</p>
+        <input type="text" id="key-input" placeholder="Type something...">
+        <p>Latest Key Pressed: <span id="key-pressed">None</span></p>
+    </section>
+
+    <section class="section" id="form-events">
+        <h2>Form Event</h2>
+        <form id="simple-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <button type="submit">Submit</button>
+        </form>
+        <p id="form-message" style="display: none; color: #4caf50;">Form submitted successfully!</p>
+    </section>
+
+    <section class="section" id="focus-blur-events">
+        <h2>Focus & Blur Event</h2>
+        <label for="focus-input">Click or Tab into this field:</label>
+        <input type="text" id="focus-input" placeholder="Focus on me!" required>
+        <p id="focus-message">Waiting for focus...</p>
+    </section>
+
+    <section class="section" id="event-delegation">
+        <h2>Event Delegation</h2>
+        <div id="button-container">
+            <button class="random-button">Click me for a surprise!</button>
+            <button class="random-button">I love Music!</button>
+            <button class="random-button">Let's have a great day!</button>
+            <button class="random-button">Coding is life!</button>
+        </div>
+        <p>Clicked Button: <span id="clicked-button">None</span></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
