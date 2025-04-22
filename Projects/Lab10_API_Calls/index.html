@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API Lab 10</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <button id="fetchButton">Fetch Data with fetch()</button>
+
+  
+  <button id="xhrButton">Fetch Data with XMLHttpRequest</button>
+
+
+  <h3>Send Data Using POST</h3>
+  <form id="dataForm">
+    <input type="text" id="title" placeholder="Title" required />
+    <textarea id="body" placeholder="Body" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+
+
+  <h3>Update Post Using PUT</h3>
+  <form id="updateForm">
+    <input type="number" id="postId" placeholder="Post ID" required />
+    <input type="text" id="updatedTitle" placeholder="Updated Title" required />
+    <textarea id="updatedBody" placeholder="Updated Body" required></textarea>
+    <button type="submit">Update Post</button>
+  </form>
+  <div id="output"></div>
+
+</body>
+</html>
