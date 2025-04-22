@@ -131,6 +131,10 @@ h2 {
     background-color: #218838;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .btn {
     display: inline-block;
     margin-top: 10px;
