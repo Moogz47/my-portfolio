@@ -248,7 +248,7 @@ body.dark-mode #form-status {
 }
 
 body.dark-mode .project-card {
-    box-shadow: 0 0 12px rgba(255, 255, 255, 0.05);
+    box-shadow: 0 0 12px rgb(255, 255, 255);
 }
 
 .switch {
