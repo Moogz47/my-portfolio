@@ -1,0 +1,78 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #a0d2eb;
+    margin: 10;
+    padding: 47px;
+}
+
+form {
+    background-color: rgb(172, 168, 252);
+    padding: 30px;
+    border: 10px solid #ddd;
+    border-radius: 47px;
+    width: 447px;
+    margin: 0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 50%;
+}
+
+input[type="reset"] {
+    background-color: green;
+    color: yellow;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 50%;
+    margin: 5px 0;
+}
+
+input[type="submit"]:hover {
+    background-color: dimgray;
+}
+input[type="reset"]:hover {
+    background-color: black;
+}
+
+h1 {
+    text-align: center;
+    color: purple;
+}
+
+h2 {
+    text-align: center;
+    color: brown;
+}
+
+footer {
+    text-align: center;
+    padding: 1px;
+    background-color: orange;
+    color: white;
+    margin: 15px 0;
+  }
+
+form label {
+    display: block;
+    font-weight: 547;
+    margin-bottom: 3px;
+    color: purple;
+}
