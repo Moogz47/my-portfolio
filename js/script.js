@@ -1,12 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
     const toggleButtons = document.querySelectorAll(".toggle-btn");
-
     toggleButtons.forEach(button => {
         button.addEventListener("click", function (event) {
             event.preventDefault();
-
             const projectDetails = this.previousElementSibling;
-            
             if (projectDetails.style.display === "none" || projectDetails.style.display === "") {
                 projectDetails.style.display = "block";
                 this.textContent = "Hide Details";
@@ -16,9 +13,24 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     });
-});
 
-document.addEventListener("DOMContentLoaded", function () {
+    const toggle = document.getElementById("darkModeToggle");
+
+    if (localStorage.getItem("theme") === "dark") {
+        document.body.classList.add("dark-mode");
+        toggle.checked = true;
+    }
+
+    toggle.addEventListener("change", () => {
+        if (toggle.checked) {
+            document.body.classList.add("dark-mode");
+            localStorage.setItem("theme", "dark");
+        } else {
+            document.body.classList.remove("dark-mode");
+            localStorage.setItem("theme", "light");
+        }
+    });
+
     const contactForm = document.getElementById("contact-form");
     const formStatus = document.getElementById("form-status");
 
@@ -62,7 +74,6 @@ document.addEventListener("DOMContentLoaded", function () {
         if (valid) {
             formStatus.textContent = "Message sent successfully!";
             formStatus.style.color = "green";
-
             contactForm.reset();
         }
     });
